@@ -3,10 +3,13 @@
 
 
 // Declare a variable and assign it to a numeric value
+
+let num1 = 4
+
 // Half that value and re-assign it to the previous variable 
 
-const num1 = 4
-console.log(num1 - 2)
+num1 = num1 / 2
+console.log(num1)
 
 // Create two negative numbers, assign them to variables and subtract one from the other together 
 
@@ -44,9 +47,9 @@ let maxvalue = Math.max(-1,-2,-3,-4,-5)
 console.log(maxvalue)
 
 // Create a variable and find it's remainder, if divided by 2
-
-const num11 = 8 % 2
-console.log(num11)
+let num11 = 8
+const remainder = num11 % 2
+console.log(remainder)
 
 // find the square root of 144 
 
@@ -65,7 +68,7 @@ console.log(valueround)
 
 // find the rounded-down value of 9.9 
 
-let valueround2 = Math.round(9.9)
+let valueround2 = Math.floor(9.9)
 console.log(valueround2)
 
 // find the absolute value of -1231

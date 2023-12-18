@@ -37,7 +37,7 @@ console.log(howmany)
 // // If your number of watermelons is more than 10, print, 'You must be CRAZY for watermelon!'
 // // If your number of watermelons is more than 15, print 'Did you have a coupon?'
 
-if(howmany == 1 || howmany == 2){
+if(howmany === 1 || howmany === 2){
   console.log ('Looks like you like watermelon')
 }
 else if(howmany > 2){

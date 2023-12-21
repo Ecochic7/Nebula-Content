@@ -1,28 +1,28 @@
 //1. Write a statement that checks if 2 and 'two' are equal
-const equal = 2 === 'two'
-console.log(equal)
+
+console.log(2 === 'two')
 //2. Write a statement that checks if '2' and 2 are loosely equal
-const equal1 = '2' != 2
-console.log(equal)
+
+console.log(2 == "2")
 //3. Write a statement that checks if 14 and '14' are strictly equal
-const equal2 = 14 === '14'
-console.log(equal2)
+
+console.log(14 === "14")
 //4. Write a statement that checks if 10 is greater than -100
-const great = 10 > -100
-console.log(great)
+
+console.log(10 > -100)
 //5. Write a statement that checks if 4 is strictly equal to the rounded value of 4.4
-const equal3 = 4 === Math.round() * 4.4
-console.log(equal3)
+
+console.log(4 === Math.round(4.4))
 //6. Write a statement that checks if 10 is greater than or equal to 9.1 rounded up
-const equal4 = 10 > Math.ceil() * 9.1 || 10 === Math.ceil() * 9.1
-console.log(equal4)
+
+console.log(10 >= Math.ceil(9.1))
 
 //7. Write a statement that checks if 10 is greater than 2 and 3 is greater than 4
-const equal5 = 10 > 2 && 3 > 4
-console.log(equal5)
+
+console.log(10 > 2 && 3 > 4)
 // // 7.a Without changing any of the numbers, or their order. How do we make this print true?
-const equal6 = 10 != 2 && 3 != 4
-console.log(equal6)
+
+console.log(10 != 2 && 3 != 4)
 
 
 //8. Pick a number between 1-20 and assign it to a variable
@@ -69,7 +69,7 @@ else {
 //   // Otherwise print. "I'm not hungry"
 const myHunger = Math.random() * 10
 console.log(myHunger)
- let howhungry = 6 > myHunger? 'Time to eat' : "I'm not hungry"
+ let howhungry = myHunger > 6 ? 'Time to eat' : "I'm not hungry"
  console.log(howhungry)
 // 10. Think of an Magic-8 Ball
 // Write a switch statement that works the same way.
@@ -82,8 +82,8 @@ console.log(myHunger)
 // The console prints out:
 // Will I win the lottery? Not Likely.
 const Magic8 = "Magic-8 Ball"
-const lottery = Math.random() * 8
-
+const lottery = Math.ceil(Math.random() * 8)
+console.log(lottery)
 switch(lottery){
     case 1:
         console.log(`${Magic8} Will I will the lottery? Not Likely`);

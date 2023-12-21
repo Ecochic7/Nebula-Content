@@ -9,25 +9,22 @@ console.log(favoritethings)
 //      Use this array for questions 4-11:
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 // 4.   log the length of the array
-console.log(daysOfWeek.length -1)
+console.log(daysOfWeek.length)
 // 5.   log the 4th element in the array
-console.log(daysOfWeek[4])
+console.log(daysOfWeek[3])
 // 6.   Remove the first element in the array. Log the new array and the element removed from the array
-const remove = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-remove.shift()
+const remove = daysOfWeek.shift()
 console.log(remove)
 // 7.   Put 'Sunday' back at the beginning of the array and log the new array
-const neww = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-neww.push()
+const neww = daysOfWeek.unshift(remove)
 console.log(neww)
-// 8.   Remove the last element in the array. Log the new array and log the element removed
-const last = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-last.pop()
-console.log(last)
+// 8.   Remove the last element in the array. Log the new array and log the element ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const removedback = daysOfWeek.pop()
+console.log(removedback)
 // 9.   Add 'Saturday' back to the end of the array and log the new array
-const add1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-add1.unshift()
-console.log(add1)
+
+daysOfWeek.push(removedback)
+
 //10.   Replace 'Thursday' with 'Friday Junior'
 daysOfWeek[4] = 'Friday Junior'
 console.log(daysOfWeek)

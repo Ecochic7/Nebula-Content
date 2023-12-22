@@ -1,7 +1,7 @@
 // 1. Declare a for loop that starts at 0, goes until 30, and increments by 1
 // //      Each loop it should log to the console 'the current index is _'
 for(i = 0; i < 30; i += 1){
-    console.log(i)
+    console.log(`the current index is ${i}`)
 }
 
 
@@ -9,7 +9,7 @@ for(i = 0; i < 30; i += 1){
 // //      Each loop it should log to the console the current index
 
 for(j = 1; j < 10; j += 2){
-    console.log(j)
+    console.log(`the current index is ${j}`)
 }
 
 // 3. Create an array with your top 5 celebrity names in it. 
@@ -24,8 +24,8 @@ for(let i = 0; i < celebrity.length; i++){
 // // If a celebrity's full name has an even number of characters log it to the console
 
 for(let i = 0; i < celebrity.length; i++){
-    if(celebrity[i] % 2 === 0)
-    console.log(celebrity[i])
+    if(celebrity[i].length % 2 === 0)
+    console.log(celebrity[i],"4")
 }
 
 // 5. Use the celebrity array for this question
@@ -37,6 +37,7 @@ const names = celebrity[i].split(' ')
 
 }
 console.log(first)
+
 // 6. Use the celebrity array for this question
 // // Create a for loop which will iterate over each element and output a new array of only last names
 const last = []
@@ -52,12 +53,13 @@ console.log(last)
 // // If a letter is a vowel, log it to the console
 
 for(let i = 0; i < celebrity.length; i ++){
-    let  vowel = celebrity[i]
+    let  vowel = celebrity[i].split(' ')
+    for(let j = 0; j < celebrity.length; j++)
 if(vowel === 'a' || vowel === 'e' || vowel === 'i'|| vowel === 'o' || vowel === 'u'){
+    console.log(vowel)
+}
+}
 
-}
-}
-console.log(celebrity[i])
 
 
 // // 8.   Loop over the celebrity list and then loop through each name. 

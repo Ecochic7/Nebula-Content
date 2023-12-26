@@ -8,9 +8,8 @@ const car1= {
     differenttype: ['Civic', 'Hatchback',"Accord"],
     yearcreated: 1948,
     isitagoodcar: true,
-    isitsabadcare: null  
-
- }
+    isitsabadcare: null,  
+} 
 console.log(car1)
 
 // 2. Using dot-notation Log to the console 3 properties from the previous object
@@ -39,17 +38,17 @@ car1.model = 'Prelude'
 console.log(car1)
 
 // 8. Create a method for turning your vehicle on
-car1['engineon'] = true
-if(engineon === true){
-    console.log('Car is On')
-}
 
-
+car1.turnOnCar = () => {
+    car1.isOn = true
+} 
+car1.turnOnCar()
 // 9.Create a method for turning your vehicle off
-car1['engineoff'] = false
-if(engineoff === false){
-    console.log('Car is Off')
-}
+car1.turnOffCar = () => {
+    car1.isOn = false
+} 
+car1.turnOffCar()
+
 //10.   
 // // a. Check if your vehicle is on (it should be off)
 // // b. Start your vehicle
@@ -57,11 +56,12 @@ if(engineoff === false){
 // // d. Stop your vehicle
 // // e. Check if your vehicle is on (it should be on)
 
-// if(isOn){
+if(car1.isOn){
+    car1.turnOnCar()
 
-// }else{
-//     car.start()
-// }
-
+}else{
+    car1.turnOffCar()
+}
+console.log(car1)
 
 

@@ -1,0 +1,24 @@
+h1{
+    background-color:Salmon; text-align: center;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+}
+#mainimg{
+    width: 200px;
+   border:5px solid black
+}
+#brand{
+   text-align: center;
+}
+
+
+  #ul{
+        display: block;
+        padding: 5px;
+        background-color: salmon;
+        
+       
+      }
+  
+  

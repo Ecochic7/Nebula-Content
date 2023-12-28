@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>
         All About Hello Kitty!
         </title>
-        <ul>
-                <a href="default.asp" style="background-color: salmon;">Home</a>
-                <a href="gallery.asp">Gallery</a>
+        <ul id="ul">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+             <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+           
         </ul>
-        <h1 style="background-color:Salmon;">About Me</h1>
-        <h2 style="border:2px solid salmon">Hello Kitty</h2>
+        <h1 class="h1">About Me</h1>
+        <h2 style="border:2px wide solid salmon" wide="200">Hello Kitty</h2>
         </head>
     <body>
     
-        <img src="https://news.harvard.edu/wp-content/uploads/2014/10/hello-kitty-wallpaper-37_605.jpg" height="200" width="200"/>
+        <img id="mainimg"
+         src="https://news.harvard.edu/wp-content/uploads/2014/10/hello-kitty-wallpaper-37_605.jpg" height="200" width="200"/>
         <p> Hello Kitty was born in Sanrio and I enjoy baking and helping people but most of all i enjoy having adventures with my friends</p>
         <a href="https://www.sanrio.com/" target="_blank">Click Here For More</a>
         <ul>Hello Kittys Friends Are
@@ -31,6 +36,6 @@
             <li>Kuromi is a tomboy, but behind her tough appearance, she is actually very girly. She enjoys writing in her diary and reading romance novels.</li>
         </ul>
         <p> <img src="data:image/jpeg;base64,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" height="200" width="200"> <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61zBsPvX6mL._AC_UF894,1000_QL80_.jpg" height="200" width="200"> <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/31XzOcX34kL._AC_UF894,1000_QL80_.jpg" height="200" width="200"> <img src="https://i.pinimg.com/474x/bd/36/fb/bd36fb7a93d43f1b903652ba6faa0e9b.jpg" height="200" width="200"> A photo of Hello Kittys Friends</p>
-    
+    <p id="brand"> HELLO KIITY</p>
     </body>
 </html>

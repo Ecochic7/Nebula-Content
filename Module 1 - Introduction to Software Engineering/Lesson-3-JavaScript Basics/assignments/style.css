@@ -1,8 +1,10 @@
 h1{
     background-color:Salmon; text-align: center;
+    margin: 80px;
 }
 body{
     background-color: hsl(0, 0%, 100%);
+    margin: 0px;
 }
 #mainimg{
     width: 200px;
@@ -11,14 +13,25 @@ body{
 #brand{
    text-align: center;
 }
-
-
-  #ul{
-        display: block;
-        padding: 5px;
-        background-color: salmon;
-        
-       
-      }
-  
-  
+.navbar {
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: salmon;
+    padding: 8px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: cursive;
+}
+.navbar a{
+    color: black;
+    font-size: 20px;
+    padding: 14px 20px;
+}
+.navbar a:hover{
+    background-color: #acfeac;
+}

@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    width: 500px;
+    /* height: 75vw;
+    width: 75vw; */
+    background-color:pink;
+    display: flex;
+    justify-content:space-around;
+    border: 8px solid; 
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.item{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* height: 20vw;
+    width: 20vw; */
+    background-color: #b0f4b0;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
